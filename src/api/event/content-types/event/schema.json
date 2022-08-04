@@ -4,37 +4,39 @@
   "info": {
     "singularName": "event",
     "pluralName": "events",
-    "displayName": "Event"
+    "displayName": "event",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
-    "Description": {
+    "description": {
       "type": "text"
     },
-    "Date": {
-      "type": "datetime"
+    "date": {
+      "type": "date"
     },
-    "Price": {
+    "price": {
       "type": "decimal"
     },
-    "Location": {
+    "location": {
       "type": "string"
     },
-    "Picture": {
+    "picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "tickets": {
       "type": "relation",
