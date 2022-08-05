@@ -43,6 +43,17 @@
       "relation": "oneToMany",
       "target": "api::ticket.ticket",
       "mappedBy": "event"
+    },
+    "Provincies": {
+      "type": "enumeration",
+      "enum": [
+        "Oost-Vlaanderen",
+        "West-Vlaanderen",
+        "Antwerpen",
+        "Vlaams-Brabant",
+        "Limburg",
+        "Brussel"
+      ]
     }
   }
 }
