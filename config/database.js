@@ -1,5 +1,6 @@
 const path = require("path");
 // this needs to change to mysql
+//or postgresql
 module.exports = ({ env }) => ({
   connection: {
     client: "sqlite",
