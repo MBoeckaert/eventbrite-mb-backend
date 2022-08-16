@@ -12,17 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
-      "type": "string"
-    },
-    "AmountOf": {
-      "type": "integer"
-    },
-    "event": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::event.event",
-      "inversedBy": "tickets"
+    "reference_number": {
+      "type": "uid"
     }
   }
 }

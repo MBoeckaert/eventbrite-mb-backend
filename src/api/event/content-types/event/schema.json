@@ -40,12 +40,6 @@
         "audios"
       ]
     },
-    "tickets": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::ticket.ticket",
-      "mappedBy": "event"
-    },
     "Provincies": {
       "type": "enumeration",
       "enum": [
@@ -56,6 +50,18 @@
         "Limburg",
         "Brussel"
       ]
+    },
+    "like": {
+      "type": "boolean"
+    },
+    "tickets_available": {
+      "type": "integer"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "event"
     }
   }
 }
