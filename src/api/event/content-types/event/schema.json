@@ -29,7 +29,7 @@
     "location": {
       "type": "string"
     },
-    "picture": {
+    "image": {
       "type": "media",
       "multiple": false,
       "required": false,
