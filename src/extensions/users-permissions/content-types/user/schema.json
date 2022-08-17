@@ -62,12 +62,6 @@
       "target": "plugin::users-permissions.role",
       "inversedBy": "users",
       "configurable": false
-    },
-    "event": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::event.event",
-      "mappedBy": "user"
     }
   }
 }

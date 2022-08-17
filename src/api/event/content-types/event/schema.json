@@ -57,11 +57,11 @@
     "tickets_available": {
       "type": "integer"
     },
-    "user": {
+    "profile": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "event"
+      "relation": "manyToOne",
+      "target": "api::profile.profile",
+      "inversedBy": "events"
     }
   }
 }
