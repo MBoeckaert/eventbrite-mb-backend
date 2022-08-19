@@ -23,9 +23,6 @@
     "date": {
       "type": "date"
     },
-    "price": {
-      "type": "decimal"
-    },
     "location": {
       "type": "string"
     },
@@ -62,6 +59,9 @@
       "relation": "manyToOne",
       "target": "api::profile.profile",
       "inversedBy": "events"
+    },
+    "price": {
+      "type": "string"
     }
   }
 }
